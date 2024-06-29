@@ -7,7 +7,7 @@ import Profile from "./pages/Profile"
 import Explore from "./pages/Explore"
 import Create from "./pages/Create"
 import App from './App.jsx'
-import Home from "./pages/home/Home.jsx";
+import Home from "./pages/home/Home";
 
 
 export const router = createBrowserRouter([
@@ -16,9 +16,12 @@ export const router = createBrowserRouter([
         element: <App />,
         children: [
             {
+                index:true,
+                element:<Home />,
+            },
+            {
                 path:'/home',
                 element:<Home />,
-                index:true
             },
             {
                 path:'/search',
