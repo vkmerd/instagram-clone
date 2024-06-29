@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Container maxWidth="100%" style={{display:"flex"}}>
-      <Box sx={{width:"245px"}}>
+      <Box sx={{flexGrow:0.4}}>
         <InstagramMenu />
       </Box>
       <Box sx={{flexGrow: 1}}>

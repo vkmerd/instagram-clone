@@ -1,4 +1,6 @@
-import { CreateIcon, HomeIcon, NotificationsIcon, ProfileIcon, ReelsIcon, SearchIcon } from "../icon/Icon";
+import { Avatar } from "@mui/material";
+import { CreateIcon, HomeIcon, MessageIcon, NotificationsIcon, ProfileIcon, ReelsIcon, SearchIcon } from "../icon/Icon";
+
 
 export const NavMenuItem = [
     {
@@ -29,6 +31,11 @@ export const NavMenuItem = [
     {
         internalPath: '/create',
         icon:<CreateIcon />,
-        title:"Notifications"
+        title:"Create"
+    },
+    {
+        internalPath: '/message',
+        icon:<MessageIcon />,
+        title:"Message"
     },
 ]
